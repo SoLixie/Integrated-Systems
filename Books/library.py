@@ -19,7 +19,7 @@ def view_books(tree):
     if not books:
         print("[INFO] No books in the library.")
         return
-    print("\n📚 Library Books:")
+    print("\nLibrary Books:")
     for book in books:
         print(f"  ID: {book.get('id')}")
         print(f"   Title : {book.find('title').text}")
@@ -63,7 +63,7 @@ def main():
     tree = load_or_create_xml()
     
     while True:
-        print("\n📚 XML Library Manager")
+        print("\nLibrary Manager")
         print("1. View all books")
         print("2. Add a new book")
         print("3. Delete a book")
